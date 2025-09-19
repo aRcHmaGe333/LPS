@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://lps:lps_password@db:5432/lps
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+      - DEBUG=true
+      - ENVIRONMENT=development
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=lps
+      - POSTGRES_USER=lps
+      - POSTGRES_PASSWORD=lps_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  celery_worker:
+    build: .
+    command: celery -A lps.services.celery worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://lps:lps_password@db:5432/lps
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+
+  celery_beat:
+    build: .
+    command: celery -A lps.services.celery beat --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://lps:lps_password@db:5432/lps
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

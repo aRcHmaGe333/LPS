@@ -1,32 +1,27 @@
 # Layered Publishing System (LPS)
 
-Layered Publishing System is an invention exploring a multi-depth approach to structuring and consuming knowledge. This repository now serves as the living strategy hub for evolving the concept from vision to implementation.
+Layered Publishing System is an invention exploring a multi-depth approach to structuring and consuming knowledge. This repository is the public-facing strategy library that shares the narrative, conceptual scaffolding, and curated plans required to appreciate the vision at a glance.
 
-## Repository Guide
+## Purpose of This Repository
+- **Show the vision.** Provide investors, partners, and curious readers with a clear, high-level understanding of how Layered Publishing works and why it matters.
+- **Signal momentum.** Demonstrate that strategic, product, and governance thinking is underway without revealing confidential execution details.
+- **Invite dialogue.** Encourage thoughtful feedback through issues or discussions while keeping authorship and roadmap control with the core team.
 
-- `layered_publishing_system.md` — the original manifesto describing the concept, psychology, and pilot roadmap.
-- `docs/findings.md` — verbatim record of the initial assessment and opportunity analysis.
-- `docs/concept_evolution.md` — audience journeys, authoring toolkit, and prototype guidelines.
-- `docs/product_architecture.md` — technical blueprint, user roles, and analytics requirements.
-- `docs/community_governance.md` — governance charter, incentives, and moderation playbook.
-- `docs/business_strategy.md` — market positioning, pricing hypotheses, and partnership strategy.
-- `docs/execution_roadmap.md` — phased plan with milestones, KPIs, and resource considerations.
-- `docs/branding_communications.md` — narrative, visual identity, and go-to-market communication plan.
+## Public Library
+- `layered_publishing_system.md` — the foundational manifesto describing the concept, psychology, and early pilot ideas.
+- `docs/findings.md` — verbatim snapshot of the initial assessment that inspired the structured follow-up.
+- `docs/concept_evolution.md` — experience journeys, authoring guidelines, and prototype suggestions at a conceptual level.
+- `docs/product_architecture.md` — technical principles, capability map, and integration considerations meant for open review.
+- `docs/community_governance.md` — public charter outlining values and contributor expectations while deferring sensitive controls to private operations playbooks.
+- `docs/business_strategy.md` — external-facing market thesis, positioning pillars, and partnership themes (financial specifics are held privately).
+- `docs/execution_roadmap.md` — phase outlines and learning objectives without confidential KPIs or hiring targets.
+- `docs/branding_communications.md` — messaging anchors and storytelling cues for future campaigns.
 
-## Getting Involved
+## Stewardship Principles
+- **All Rights Reserved.** The work is published for reading and discussion; reuse requires explicit permission from the owner.
+- **Curated updates.** Only invited maintainers can commit changes. External suggestions are gathered through issues, discussions, or direct outreach.
+- **Selective transparency.** Detailed financials, proprietary metrics, and contractual terms live in private systems. Public files highlight direction while protecting execution advantage.
+- **Feedback welcome.** If you spot opportunities or wish to collaborate, open an issue summarizing your perspective and a maintainer will follow up.
 
-Layered Publishing System remains an All Rights Reserved initiative, but the repository is intentionally public so anyone can read the materials, share feedback, and follow the project’s evolution. Editing rights, branching, and direct contributions stay limited to invited team members operating under a formal collaboration agreement.
-
-### Access Model
-
-- **Public readability stays on.** Repository visibility is set to Public so readers can browse the codebase, star it, watch for updates, and open issues or discussions to share observations.
-- **Write permissions stay invite-only.** Branch protection rules and required reviews ensure that only approved maintainers can push changes or merge pull requests.
-- **Forks are optional sandboxes.** Allowing forks lets interested readers explore ideas or draft feedback in their own copies without touching the canonical repo. Because the project is All Rights Reserved, those forks cannot redistribute the material commercially, and maintainers still decline unsolicited pull requests. If a period arises where even sandboxed copies feel risky, the team can disable “Allow forking” temporarily in repository settings.
-
-If you are an investor, partner, or prospective teammate who would like to discuss participation, please open an issue outlining your interest or reach out through existing channels so the core team can coordinate next steps.
-
-### Change Automation Expectations
-
-- **Why did new documents appear after a question?** In this collaboration the maintainer explicitly asked the assistant to “document your findings word-for-word and start to follow your own advice and work independently on executing all of the steps you outlined.” That directive triggered proactive documentation updates so ideas raised in conversation would not be lost. If you would like to pause or narrow that automation, simply revise the instruction and future interactions will respect the updated scope.
-- **Can I request discussion-only replies?** Absolutely. Clarify in the prompt that you want exploratory feedback without repository edits, and the workflow will stay conversational until you ask for concrete changes.
-- **How are unrequested changes avoided?** The repository follows a consent-first policy: no new commits are made unless an instruction (written or standing) calls for them. Adjusting or revoking that instruction immediately returns control to the owner, and historical commits remain traceable through Git history for review or reversion.
+## How Decisions Are Managed
+The maintainer periodically reviews repository content to ensure every public document serves the project’s best interest. Materials that should remain confidential are summarized at a high level and stored in private knowledge bases. If circumstances change—such as new partners, updated policies, or sensitive discoveries—the relevant public files will be refreshed accordingly.

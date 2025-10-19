@@ -25,15 +25,6 @@ Layered Publishing System remains an All Rights Reserved initiative, but the rep
 
 If you are an investor, partner, or prospective teammate who would like to discuss participation, please open an issue outlining your interest or reach out through existing channels so the core team can coordinate next steps.
 
-### Access & Forking FAQ
-
-- **Why don’t I see an “Approve changes” button?** Only collaborators with the required GitHub role (typically `Write` or above) and branch protection privileges can review and approve pull requests. Public readers can comment on issues or discussions instead.
-- **Do maintainers need to approve every change?** Yes. Branch protection rules keep merges blocked until a designated maintainer signs off, ensuring the canonical history stays curated.
-- **What happens to existing forks if “Allow forking” is disabled?** Disabling the setting prevents *new* forks from being created. Any forks that already exist stay visible to their owners; they simply stop receiving upstream updates unless the owner rebases manually. Re-enabling the option later allows new forks again.
-- **I’m the owner—where do I approve changes?** Open the pull request in GitHub’s web UI, click the **Files changed** tab, and use the **Review changes** button in the top-right corner to leave comments or select **Approve**. If branch protection requires reviewers to be requested explicitly, add yourself via **Reviewers** first. Repository admins can also adjust branch protection to allow self-approval or direct merges when appropriate.
-- **Why do I only see “Create draft PR / Copy git apply / Copy patch”?** Those controls appear when you’re viewing the comparison page before a pull request exists. They simply let you open a new PR or copy the diff for manual application. To approve an existing PR, open it directly (e.g., from the **Pull requests** tab), then follow the **Files changed → Review changes** workflow described above.
-- **What if I’m ready to approve changes from the comparison view?** Click **Create pull request** (or **Create draft PR** if you want to stage it first). Once the PR is created, switch to the **Files changed** tab and use **Review changes → Approve**. Creating the PR doesn’t merge anything automatically—it just opens the review surface so maintainers can provide feedback or approval before merging.
-
 ### Change Automation Expectations
 
 - **Why did new documents appear after a question?** In this collaboration the maintainer explicitly asked the assistant to “document your findings word-for-word and start to follow your own advice and work independently on executing all of the steps you outlined.” That directive triggered proactive documentation updates so ideas raised in conversation would not be lost. If you would like to pause or narrow that automation, simply revise the instruction and future interactions will respect the updated scope.

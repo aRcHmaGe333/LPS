@@ -1,4 +1,4 @@
-# Layered Publishing System (LPS)
+﻿# Layered Publishing System (LPS)
 
 Layered Publishing System is an invention exploring a multi-depth approach to structuring and consuming knowledge. This repository is the public-facing strategy library that shares the narrative, conceptual scaffolding, and curated plans required to appreciate the vision at a glance.
 
@@ -25,3 +25,11 @@ Layered Publishing System is an invention exploring a multi-depth approach to st
 
 ## How Decisions Are Managed
 The maintainer periodically reviews repository content to ensure every public document serves the project’s best interest. Materials that should remain confidential are summarized at a high level and stored in private knowledge bases. If circumstances change—such as new partners, updated policies, or sensitive discoveries—the relevant public files will be refreshed accordingly.
+## Support This Work
+
+If this project is useful to you, consider supporting ongoing independent development.
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20work-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/earthcraft)
+
+Direct link: https://ko-fi.com/earthcraft
+

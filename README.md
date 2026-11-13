@@ -1,6 +1,6 @@
 ﻿# Layered Publishing System (LPS)
 
-Layered Publishing System is an invention exploring a multi-depth approach to structuring and consuming knowledge. This repository is the public-facing strategy library that shares the narrative, conceptual scaffolding, and curated plans required to appreciate the vision at a glance.
+Layered Publishing lets people explore the same material at different levels of detail, from a short overview to the full information behind it. This repository contains the public explanation, designs and plans.
 
 ## Purpose of This Repository
 - **Show the vision.** Provide investors, partners, and curious readers with a clear, high-level understanding of how Layered Publishing works and why it matters.
